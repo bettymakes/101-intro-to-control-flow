@@ -2,12 +2,14 @@ $(document).ready(function(){
   /* STEP 1
     Create your variables here
     
-    We'll need to create variables to represent the following values:
-    - Monday Temperature [number]
-    - Tuesay Temperature [number]
-    - Wednesday Temperature [number]
-    - Thursday Temperature [number]
-    - Friday Temperature [number]
+    We'll need to create the following variables and assign them to the values
+    as instructed below:
+
+    - Monday Temperature      = 5
+    - Tuesay Temperature      = 100
+    - Wednesday Temperature   = 20
+    - Thursday Temperature    = -4
+    - Friday Temperature      = -30
 
     Ex. var monTemp = 5;
   */
@@ -32,6 +34,7 @@ $(document).ready(function(){
     var currentItem = $('<li><span>' + tempList[item] + '&deg;C</span></li>');
     currentItem.appendTo('#temp-list');
 
+
     /* STEP 3
       IF/Else - Let's create some conditions!
 
@@ -54,7 +57,7 @@ $(document).ready(function(){
       }
     */
 
-    
+
 
 
 
