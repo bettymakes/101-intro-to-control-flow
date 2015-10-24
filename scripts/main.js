@@ -29,7 +29,9 @@ $(document).ready(function(){
 
 
 
-  for(var item = 0; item < tempList.length; i++) {
+  /* Scroll to line 40 for STEP 3 */
+
+  for(var item = 0; item < tempList.length; item++) {
 
     var currentItem = $('<li><span>' + tempList[item] + '&deg;C</span></li>');
     currentItem.appendTo('#temp-list');
@@ -45,16 +47,6 @@ $(document).ready(function(){
 
       * Note, we're only creating the conditions.
         The blocks for each condition should be empty at the moment
-
-
-      (HINT)
-      if ( condition ) {
-  
-      } else if ( condition ) {
-  
-      } else {
-  
-      }
     */
 
 
@@ -68,18 +60,23 @@ $(document).ready(function(){
       in their corresponding blocks
 
       1) IF tempList[item] is GREATER THAN 10 ...
-⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄  Copy this code in the if block: ⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄
-              currentItem.addClass('hot');
+⌄⌄⌄⌄  Copy this code in the if block that you just created in the lines above: ⌄⌄⌄⌄
+                        
+                        currentItem.addClass('hot');
+
 
 
       2) ELSE IF tempList[item] is GREATER THAN -5 ...
-⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄  Copy this code in the else if block: ⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄
-          currentItem.addClass('normal');
+⌄⌄⌄⌄  Copy this code in the else if block that you just created in the lines above: ⌄⌄⌄⌄
+          
+                        currentItem.addClass('normal');
+
 
 
       3) ELSE
-⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄  Copy this code in the else block: ⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄
-          currentItem.addClass('cold'); 
+⌄⌄⌄⌄  Copy this code in the else block that you just created in the lines above: ⌄⌄⌄⌄
+          
+                        currentItem.addClass('cold'); 
 
     */
 
