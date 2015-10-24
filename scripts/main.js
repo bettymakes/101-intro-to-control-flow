@@ -13,23 +13,30 @@ $(document).ready(function(){
 
     Ex. var monTemp = 5;
   */
-  var mondayTemp = 5;
+  var monTemp = 5,
+      tuesTemp = 100,
+      wedTemp = 20,
+      thursTemp = -4,
+      friTemp = - 30;
+
 
 
 
 
   /* STEP 2
-    Make an array and call it tempList.
+    Make an array and call it tempList. 
     Your tempList array should hold all the temperatures you've created in
     the previous step (above).
-  
+    
+
     Ex. var myArray = [monTemp, tuesTemp, wedTemp, thursTemp, friTemp];
   */
 
+  var tempList = [monTemp, tuesTemp, wedTemp, thursTemp, friTemp];
 
 
 
-  for(var item = 0; item < tempList.length; i++) {
+  for(var item = 0; item < tempList.length; item++) {
 
     var currentItem = $('<li><span>' + tempList[item] + '&deg;C</span></li>');
     currentItem.appendTo('#temp-list');
@@ -57,6 +64,14 @@ $(document).ready(function(){
       }
     */
 
+    if ( tempList[item] > 10 ) {
+      currentItem.addClass('hot');
+    } else if ( tempList[item] > -5) {
+      currentItem.addClass('normal');
+    } else {
+      currentItem.addClass('cold');
+    }
+
 
 
 
@@ -79,7 +94,7 @@ $(document).ready(function(){
 
       3) ELSE
 ⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄  Copy this code in the else block: ⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄
-          currentItem.addClass('cold'); 
+          currentItem.addClass('cold');
 
     */
 
